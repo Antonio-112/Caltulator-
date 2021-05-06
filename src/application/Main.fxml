@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="380.0" prefWidth="300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MainController">
+   <children>
+      <Label fx:id="selectLabel" layoutX="15.0" layoutY="47.0" prefHeight="65.0" prefWidth="270.0" style="-fx-background-color: white; -fx-border-color: gray; -fx-border-width: 1;" textAlignment="RIGHT" textFill="#140000">
+         <font>
+            <Font size="28.0" />
+         </font>
+         <padding>
+            <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+         </padding>
+      </Label>
+      <Label fx:id="totalLabel" contentDisplay="CENTER" layoutX="150.0" layoutY="22.0" prefHeight="20.0" prefWidth="135.0" style="-fx-background-color: white; -fx-border-color: gray;" />
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="170.0" prefHeight="40.0" prefWidth="270.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#selectNumbers" prefHeight="67.0" prefWidth="66.0" text="1">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#selectNumbers" prefHeight="67.0" prefWidth="66.0" text="2">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#selectNumbers" prefHeight="67.0" prefWidth="66.0" stylesheets="@application.css" text="3">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#selectOperator" prefHeight="67.0" prefWidth="66.0" stylesheets="@application.css" text="-" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="220.0" prefHeight="40.0" prefWidth="270.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#selectNumbers" prefHeight="67.0" prefWidth="66.0" text="4">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#selectNumbers" prefHeight="67.0" prefWidth="66.0" text="5">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#selectNumbers" prefHeight="67.0" prefWidth="66.0" stylesheets="@application.css" text="6">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#selectOperator" prefHeight="67.0" prefWidth="66.0" stylesheets="@application.css" text="+" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="270.0" prefHeight="40.0" prefWidth="270.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#selectNumbers" prefHeight="67.0" prefWidth="66.0" text="7">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#selectNumbers" prefHeight="67.0" prefWidth="66.0" text="8">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#selectNumbers" prefHeight="67.0" prefWidth="66.0" stylesheets="@application.css" text="9">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#selectOperator" prefHeight="67.0" prefWidth="66.0" stylesheets="@application.css" text="*" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" layoutX="15.0" layoutY="320.0" prefHeight="40.0" prefWidth="270.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#selectNumbers" prefHeight="40.0" prefWidth="140.0" text="0">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#selectOperator" prefHeight="67.0" prefWidth="66.0" stylesheets="@application.css" text="/">
+               <HBox.margin>
+                  <Insets left="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#calcular" prefHeight="67.0" prefWidth="66.0" stylesheets="@application.css" text="=" />
+         </children>
+      </HBox>
+      <Button alignment="CENTER" layoutX="225.0" layoutY="120.0" mnemonicParsing="false" onAction="#clear" prefHeight="40.0" prefWidth="60.0" text="ce">
+         <font>
+            <Font size="10.0" />
+         </font>
+         <rotationAxis>
+            <Point3D />
+         </rotationAxis>
+      </Button>
+   </children>
+</Pane>
